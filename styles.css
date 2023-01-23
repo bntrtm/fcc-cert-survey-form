@@ -1,0 +1,31 @@
+input[type="radio"] {
+    vertical-align: middle;
+  }
+  
+  label {
+    display: block;
+    padding-top: 3px;
+  }
+  
+  fieldset {
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .question {
+    font-weight: bold;
+  }
+  
+  textarea {
+    margin-top: 5px;
+  }
+  
+  .dropdown {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  
+  .dropdown>select {
+    max-width: 250px;
+    margin: 5px 0;
+  }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">TTRPG-Labs Annual Survey Form</h1>
+    <p id="description"><em>As usual, each year we take the time to gather official feedback on how players are feeling about the direction of our campaign(s). Thank you for taking the time to provide this feedback!</em></p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Full Name: <input required type="text" placeholder="Enter your full name" id="name"></label>
+        <label id="email-label" for="email">Email Address: <input required type="email" placeholder="Enter your email address" id="email"></label>
+        <label id="number-label" for="age">Age (optional) <input id="number" type="number" min="13" max="120" placeholder="Age"></label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown" class="question dropdown">Which campaign are you in? <select required id="dropdown" placeholder="Select current role">
+          <option>Select an Option</option>
+          <option>Lair of the Lost</option>
+          <option>Call of the Music</option>
+          <option>Rocks of Agrabon</option>
+          </select>
+        </label>
+        <label for="dropdown" class="question dropdown">How are you feeling about the campaign so far? <select required id="dropdown" placeholder="Select current role">
+          <option>Select an option</option>
+          <option>Couldn't be better!</option>
+          <option>It's pretty good.</option>
+          <option>It needs some work.</option>
+          <option>I think I'm gonna leave...</option>
+          <option>Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <p class="question">Would you refer a friend to our TTRPG campaign?</p>
+        <label for="radio-definitely"><input type="radio" name="radio-buttons" id="radio-definitely" value="Definitely">Definitely!</label>
+        <label for="radio-maybe"><input type="radio" name="radio-buttons" id="radio-definitely" value="Maybe">Maybe?</label>
+        <label for="radio-not-sure"><input type="radio" name="radio-buttons" id="radio-not-sure" value="Not-Sure">No chance!</label>
+      </fieldset>
+      <fieldset>
+        <p class="question">What mechanics or other elements of the campaign have you most enjoyed in the past year?</p>
+        <label><input type="checkbox" value="1">Combat</label>
+        <label><input type="checkbox" value="2">Roleplaying</label>
+        <label><input type="checkbox" value="3">Dungeon Crawling</label>
+        <label><input type="checkbox" value="4">Puzzles</label>
+        <label><input type="checkbox" value="5">Mystery</label>
+        <label><input type="checkbox" value="6">Character Development</label>
+        <label><input type="checkbox" value="7">Spellcasting</label>
+        <label><input type="checkbox" value="8">Dicerolling</label>
+        <label><input type="checkbox" value="9">Setting & Atmosphere</label>
+        <label><input type="checkbox" value="10">Large-scale battles</label>
+        <label><input type="checkbox" value="11">Epic bosses & BBEGs</label>
+      </fieldset>
+      <fieldset>
+        <label for="textarea-field" class="question">Any comments or suggestions? <br><textarea id="textarea-field" rows="3" cols="30" placeholder="Enter your comment here..."></textarea></label>
+      </fieldset>
+    <input type="submit" id="submit" name="submit">
+    </form>
+  </body>
+</html>
